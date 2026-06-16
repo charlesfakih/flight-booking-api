@@ -1,0 +1,6 @@
+/workspaces/flight-booking-api/src/main/java/com/charlesfakih/flightbooking/domain/Booking.java
+/workspaces/flight-booking-api/src/main/java/com/charlesfakih/flightbooking/repository/BookingRepository.java
+/workspaces/flight-booking-api/src/main/java/com/charlesfakih/flightbooking/domain/Passenger.java
+/workspaces/flight-booking-api/src/main/java/com/charlesfakih/flightbooking/domain/Flight.java
+/workspaces/flight-booking-api/src/main/java/com/charlesfakih/flightbooking/repository/FlightRepository.java
+/workspaces/flight-booking-api/src/main/java/com/charlesfakih/flightbooking/FlightBookingApplication.java

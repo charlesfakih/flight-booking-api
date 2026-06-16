@@ -1,0 +1,6 @@
+com/charlesfakih/flightbooking/domain/Flight.class
+com/charlesfakih/flightbooking/FlightBookingApplication.class
+com/charlesfakih/flightbooking/domain/Booking.class
+com/charlesfakih/flightbooking/repository/FlightRepository.class
+com/charlesfakih/flightbooking/repository/BookingRepository.class
+com/charlesfakih/flightbooking/domain/Passenger.class
