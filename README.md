@@ -60,4 +60,4 @@ Returns `409 Conflict` when the flight is fully booked.
 
 - **Concurrency tests:** I would add integration tests that would test race conditions especially in the overbooking scenario.
 
-- **Structured logging:**: I would add logging for HTTP requests and responses for better traceability.
+- **Structured logging:** I would add logging for HTTP requests and responses for better traceability.
