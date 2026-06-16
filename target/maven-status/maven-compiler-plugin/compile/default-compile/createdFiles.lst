@@ -1,3 +1,4 @@
+com/charlesfakih/flightbooking/exception/FlightAlreadyExistsException.class
 com/charlesfakih/flightbooking/exception/GlobalExceptionHandler.class
 com/charlesfakih/flightbooking/controller/FlightController.class
 com/charlesfakih/flightbooking/service/FlightService.class

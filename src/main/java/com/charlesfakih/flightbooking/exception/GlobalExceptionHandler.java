@@ -39,4 +39,11 @@ public class GlobalExceptionHandler {
         return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR)
                 .body(new ErrorResponse(LocalDateTime.now(), 500, "An unexpected error occurred"));
     }
+
+    @ExceptionHandler(FlightAlreadyExistsException.class)
+    public ResponseEntity<ErrorResponse> handleFlightAlreadyExists(FlightAlreadyExistsException ex) {
+        return ResponseEntity.status(HttpStatus.CONFLICT)
+                .body(new ErrorResponse(LocalDateTime.now(), 409, ex.getMessage()));
+    }
+
 }

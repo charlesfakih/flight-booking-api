@@ -4,6 +4,8 @@ import com.charlesfakih.flightbooking.domain.Flight;
 import com.charlesfakih.flightbooking.exception.FlightNotFoundException;
 import com.charlesfakih.flightbooking.repository.FlightRepository;
 import org.springframework.stereotype.Service;
+import com.charlesfakih.flightbooking.exception.FlightAlreadyExistsException;
+
 
 @Service
 public class FlightService {
@@ -15,6 +17,9 @@ public class FlightService {
     }
 
     public Flight createFlight(Flight flight) {
+        if (flightRepository.findByFlightNumber(flight.getFlightNumber()).isPresent()) {
+            throw new FlightAlreadyExistsException(flight.getFlightNumber());
+        }
         return flightRepository.save(flight);
     }
 
